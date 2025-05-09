@@ -1,0 +1,409 @@
+/* Pembuka-strt*/
+:root {
+  --wartu: #000000;
+  --lb: #ffffff;
+  --bg: #dfdddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--lb);
+  color: black;
+  /* min-height: 5000px; */
+}
+/* Pembuka-end */
+
+/* Navbar-strt */
+.Navbar {
+  display: flex;
+  justify-content: space-between; /*ini buat ratain secara horozontal */
+  align-items: center; /*vertical */
+  padding: 1.4rem 7%;
+  background-color: var(--wartu);
+  border-bottom: 3px solid red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* left */
+.Navbar .Navbar_Logo {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-style: italic;
+}
+.Navbar .Navbar_Logo span {
+  color: red;
+}
+
+/* center */
+.Navbar .Navbar_Menu {
+  font-size: 1.3rem;
+}
+.Navbar .Navbar_Menu a {
+  color: var(--lb);
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* right */
+.Navbar .Navbar_Daftar {
+  font-size: 1.3rem;
+}
+
+.Navbar .Navbar_Daftar a {
+  color: var(--lb);
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* Navbar-end */
+
+/* Hero section strt */
+.Hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("image-collage-of-jujutsu-kaisen-oshi-no-ko-and-demon-slayer.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Hero .Content {
+  padding: 1.4rem 7%;
+}
+.Hero .Content h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.Hero .Content p {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.Hero .Content a {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 2px solid plum;
+  border-radius: 12px;
+  background-color: plum;
+  padding: 0.5rem;
+}
+
+/* Hero section end */
+
+/* Genre section strt */
+.Genre {
+  padding: 7rem 7% 1.4rem;
+}
+
+.Genre h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.Kotak_grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  margin-top: 13rem;
+  gap: 100px;
+  margin-bottom: 330px;
+}
+.Kotak_grid .grid1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid red;
+  padding: 10px;
+}
+.Kotak_grid .grid1 img {
+  height: auto;
+  width: 60px;
+}
+.Kotak_grid .grid1 p {
+  text-align: center;
+}
+
+.Kotak_grid .grid2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid red;
+  padding: 10px;
+}
+.Kotak_grid .grid2 img {
+  height: 60px;
+  width: 60px;
+}
+.Kotak_grid .grid2 p {
+  text-align: center;
+}
+
+.Kotak_grid .grid3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid red;
+  padding: 10px;
+}
+
+.Kotak_grid .grid3 img {
+  height: 60px;
+  width: 60px;
+}
+.Kotak_grid .grid3 p {
+  text-align: center;
+}
+
+/* Genre  section end*/
+
+/* About section strt */
+.About {
+  padding: 7rem 7% 1.4rem;
+}
+.About h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.About .Row {
+  display: flex;
+}
+.About .Row .About-img {
+  flex: 1 1 45rem;
+}
+.About .Row .About-img img {
+  width: 100%;
+}
+.About .Row .Content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+.About .Row .Content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+  margin-top: 5rem;
+}
+.About .Row .Content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.About .Row .Content a {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 2px solid plum;
+  border-radius: 12px;
+  background-color: plum;
+  padding: 0.5rem;
+}
+
+/* About section end */
+
+/* Member section strt */
+.Member {
+  padding: 7rem 7% 1.4rem; /*atas samping bawah*/
+  background-color: #f2f2f2;
+}
+.Member h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.Member .Baris {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+.Member .Baris .Baris-p {
+  flex: 1 1 35rem;
+}
+.Member .Baris .Baris-p h3 {
+  font-size: 3rem;
+}
+
+.Member .Baris .Block_grid {
+  flex: 1 1 45rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.Member .Baris .Block_grid .flex1 {
+  display: flex;
+  align-items: center;
+}
+.Member .Baris .Block_grid .flex1 img {
+  height: auto;
+  width: 60px;
+}
+
+.Member .Baris .Block_grid .flex2 {
+  display: flex;
+  align-items: center;
+}
+.Member .Baris .Block_grid .flex2 img {
+  height: auto;
+  width: 60px;
+}
+.Member .Baris .Block_grid .flex3 {
+  display: flex;
+  align-items: center;
+}
+.Member .Baris .Block_grid .flex3 img {
+  height: auto;
+  width: 60px;
+}
+.Member .Baris .Block_grid .flex4 {
+  display: flex;
+  align-items: center;
+}
+.Member .Baris .Block_grid .flex4 img {
+  height: auto;
+  width: 60px;
+}
+
+/* Member section end */
+/* Pendaftaran section strt */
+.Daftar {
+  padding: 7rem 7% 1.4rem;
+  background-color: #f2f2f2;
+  margin-top: 100px;
+}
+.Daftar h2 {
+  text-align: center;
+}
+.Daftar .foul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.Daftar .foul h3 {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.Daftar .foul a {
+  /* display: inline-block; */
+  width: 200px;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 2px solid plum;
+  border-radius: 12px;
+  background-color: plum;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Pendaftaran section end */
+
+/* Kontak footer strt */
+
+.Footer {
+  padding: 7rem 7% 1.4rem;
+  color: #f2f2f2;
+  background-color: rgb(25, 47, 55);
+}
+.Footer .Kolom {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.Footer .Kolom .Copyright {
+  align-items: center;
+}
+.Footer .Kolom .Copyright h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.Footer .Kolom .Copyright h3 span {
+  color: red;
+}
+.Footer .Kolom .Copyright p {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.Footer .Kolom .list {
+  align-items: center;
+}
+.Footer .Kolom .list .list_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.Footer .Kolom .list .list_1 .lol_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.Footer .Kolom .list .list_1 .lol_1 h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.Footer .Kolom .list .list_1 .lol_1 a {
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.Footer .Kolom .list .list_1 .lol_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.Footer .Kolom .list .list_1 .lol_2 h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.Footer .Kolom .list .list_1 .lol_2 a {
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.Footer .Kolom .Email .Wer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer .Kolom .Email .Wer h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.Footer .Kolom .Email .Wer input {
+  width: fit-content;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 2px solid plum;
+  border-radius: 12px;
+  background-color: rgb(158, 158, 158);
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Kontak footer end */
